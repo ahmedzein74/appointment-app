@@ -9,4 +9,10 @@ class TextStyles {
       fontSize: 32.sp,
       fontWeight: FontWeight.bold,
       color: ColorsManagar.mainBlue);
+  static TextStyle font13GreyRegular = TextStyle(
+    fontSize: 13.sp,
+    color: ColorsManagar.grey,
+  );
+  static TextStyle font16WhiteSemibold = TextStyle(
+      fontSize: 16.sp, color: Colors.white, fontWeight: FontWeight.w500);
 }
