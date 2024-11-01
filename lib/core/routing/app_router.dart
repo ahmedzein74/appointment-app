@@ -1,3 +1,4 @@
+import 'package:appointment_app/features/splash/splash_screen.dart';
 import 'package:appointment_app/features/login/ui/login_screen.dart';
 import 'package:appointment_app/features/on_boarding/on_boarding_screen.dart';
 import 'package:go_router/go_router.dart';
@@ -9,12 +10,12 @@ abstract class AppRouter {
     routes: [
       GoRoute(
         path: '/',
+        builder: (context, state) => const SplashScreen(),
+      ),
+      GoRoute(
+        path: onBoardingScreen,
         builder: (context, state) => const OnBoardingScreen(),
       ),
-      // GoRoute(
-      //   path: onBoardingScreen,
-      //   builder: (context, state) => const OnBoardingScreen(),
-      // ),
       GoRoute(
         path: loginScreen,
         builder: (context, state) => const LoginScreen(),
